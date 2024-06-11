@@ -8,10 +8,8 @@
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* max-width: 1980px; */
     margin: 0 auto;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 nav{
@@ -44,6 +42,7 @@ nav{
     flex-grow: 1;
     overflow-y: hidden;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navBrand i{
@@ -81,16 +80,17 @@ nav{
 main{
     height: 100vh;
     z-index: 0;
-    padding-top: 50px;
     max-width: 1440px;
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;
+    scroll-behavior: smooth !important;
 }
 
 
 .infoDiv{
-    scroll-snap-align: center;
+    padding-top: 50px;
+    scroll-snap-align: start;
     scroll-snap-stop: always;
 }
 
@@ -216,7 +216,6 @@ main{
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 10px;
-
 }
 
 .workCardsParent{
@@ -263,6 +262,9 @@ main{
 .projectDiv > *, .projectDiv > * > *, .projectDiv > * > * > *, .projectDiv > * > * > * > *, .projectDiv > * > * > * > * > *, .projectDiv > * > * > * > * > * > *{
     overflow-y: hidden !important;
 }
+.desktop{
+    display: none !important;
+}
 .projectDiv h2{
     font-weight: 600;
     margin-bottom: 10%;
@@ -275,7 +277,7 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 85%;
+    height: 90%;
 }
 
 .projectCard{
@@ -288,7 +290,7 @@ main{
     padding: 10px 12px;
     overflow-y: hidden;
     gap: 5px;
-    margin: 0 15% 80px;
+    margin: 0 15% 50px;
 }
 
 .projectCard img{
@@ -313,7 +315,6 @@ main{
 }
 .techs{
     display: flex;
-
     flex-wrap: wrap;
     gap: 2px;
 }
@@ -333,6 +334,11 @@ main{
     border-radius: 3px;
     opacity: 0.9 !important;
 }
+.carousel-inner{
+    border: 1px solid #ad9aa0;
+    padding: 20px 0;
+    border-radius: 6px;
+}
 #githubLink{
     display: inline;
     position: relative;
@@ -343,4 +349,204 @@ main{
     padding: 5px 10px;
     border-radius: 5px;
     text-decoration: none;
+}
+
+.newsDiv{
+    display: block;
+    position: relative;
+    height: 100vh;
+    padding: 80px 5% 0;
+    scroll-snap-align: start;
+    scroll-snap-stop:always;
+}
+
+.newsDiv > *, .newsDiv > * > *, .newsDiv > * > * > *, .newsDiv > * > * > * > *, .newsDiv > * > * > * > * > *, .newsDiv > * > * > * > * > * > *{
+    overflow-y: hidden !important;
+}
+
+.newsCardsParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding-bottom: 50px;
+}
+.newsCardsParent h2{
+    margin-left: 5%;
+    margin-bottom: 10%;
+    font-weight: 600;
+}
+.newsCards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.newsCard{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
+    /* margin: 10px 0; */
+    background-color: #f6f6f6;
+    padding: 8px 12px;
+    display: grid;
+}
+
+.newsCard  p{
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+.newsCard a{
+    color: #4fa3db;
+    text-decoration: none;
+    font-size: .9rem;
+}
+.newsCard h5,.newsCard p, .newsCard a{
+    margin-left: 0;
+}
+.newsInfo{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.newsInfo p{
+    text-align: right;
+    margin-right: 0;
+}
+
+.contactDiv{
+    display: block;
+    position: relative;
+    height: 100vh;
+    padding: 100px 5% 0;
+    scroll-snap-align: start;
+    scroll-snap-stop:always;
+}
+
+.contactDiv > *, .contactDiv > * > *, .contactDiv > * > * > *, .contactDiv > * > * > * > *, .contactDiv > * > * > * > * > *, .contactDiv > * > * > * > * > * > *{
+    overflow-y: hidden !important;
+}
+
+.contactFormParent h2{
+    margin-left: 5%;
+    margin-bottom: 7%;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.contactFormParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding-bottom: 50px;
+}
+
+.contactForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contactForm .formGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.contactForm .formGroup label{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.contactForm .formGroup input{
+    display: flex;
+    flex-grow: 1;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+.contactForm .formGroup textarea{
+    display: flex;
+    flex-grow: 1;
+    height: 200px;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+#sendMail{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color: #ff014f;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#sendMail:hover{
+    color: #ff014f;
+    background-color: #fff;
+    border: 2px solid #ff014f;
+}
+.contactSocialIcons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.contactSocialIcons h6{
+    font-size: 1.2rem;
+    margin-left: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+    
+}
+.contactSocialIcons .socialIcons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    width: 90%;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.contactSocialIcons .socialIcons i{
+    font-size: 2rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff014f;
+    color: #fff;
+    padding: 80px 0;
+    position: relative;
+    z-index: 10;
+    scroll-snap-align: center;
+    gap: 10px;
+}
+
+footer img{
+    width: 20%;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }
