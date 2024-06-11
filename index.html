@@ -43,15 +43,15 @@
                 </div>
                 <ul class="navLinks">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#workDiv">My Skills</a></li>
+                    <li><a href="#projectDiv">My Projects</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>  
             </nav>
         </header>
         <main>
-            <div class="row infoDiv">
+            <div id="home" class="row infoDiv">
                 <div class="col-sm-6 col-md-6 myInfo">
                     <img src="https://ishanj.lk/img/1.png" alt="Ishan Jayasinghe">    
                 </div>
@@ -72,8 +72,167 @@
                     </div>
                 </div>
             </div>
-            <div class="workDiv">
-                <h1>uhuvhfh</h1>
+            <div id="workDiv" class="workDiv">
+                <div class="workCardsParent">
+                    <h2>⭕ My Skills</h2>
+                    <div class="workCards">
+                        <div class="workCard">
+                            <i class="fa-solid fa-code"></i>
+                            <h5>Front-End Development</h5>
+                            <p>Front end development with famous libraries and frameworks like React.Js, jQuery and Next.JS</p>
+                        </div>
+                        <div class="workCard">
+                            <i class="fa-solid fa-server"></i>
+                            <h5>Back-End Development</h5>
+                            <p>Back end development with famous libraries and frameworks like Node.JS, Express and php.</p>
+                        </div>
+                        <div class="workCard">
+                            <i class="fa-solid fa-mobile"></i>
+                            <h5>Mobile App Development</h5>
+                            <p>Back end development with famous libraries and frameworks like Node.JS, Express and php.</p>
+                        </div>
+                        <div class="workCard">
+                            <i class="fa-solid fa-database"></i>
+                            <h5>Server and Database Management</h5>
+                            <p>Manage linux servers and MySQL, MongoDB DBMSs.</p>
+                        </div>
+                        <!-- <div class="workCard">
+                            <i class="fa-solid fa-database"></i>
+                            <h5>Server and Database Management</h5>
+                            <p>Manage linux servers and MySQL, MongoDB DBMSs.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <div id="projectDiv" class="projectDiv">
+                <div class="projectCardsParent mobile">
+                    <h2>⭕ My Projects</h2>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators carouselBtn">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="projectCard">
+                                <img src="https://ishanj.lk/img/RMS/RMS_main.png" alt="First Project">
+                                <h5>Restaurant Management System</h5>
+                                <p>This is a desktop app built with Tauri.</p>
+                                <a href="">Visit Project</a>
+                                <div class="techs">
+                                    <span>React.JS</span>
+                                    <span>Node.JS</span>
+                                    <span>Express</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="projectCard">
+                                <img src="https://ishanj.lk/img/sites.png" alt="Second Project">
+                                <h5>Restaurant Management System</h5>
+                                <p>This is a desktop app built with Tauri.</p>
+                                <a href="">Visit Project</a>
+                                <div class="techs">
+                                    <span>NextJS</span>
+                                    <span>Node.JS</span>
+                                    <span>Prisma ORM</span>
+                                    <span>Tailwind</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="projectCard">
+                                <img src="https://ishanj.lk/img/ReactNativeMart.png" alt="Third Project">
+                                <h5>Restaurant Management System</h5>
+                                <p>This is a desktop app built with Tauri.</p>
+                                <a href="">Visit Project</a>
+                                <div class="techs">
+                                    <span>React.JS</span>
+                                    <span>Node.JS</span>
+                                    <span>Express</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="projectCard">
+                                <img src="https://ishanj.lk/img/ReactNativeMart.png" alt="Third Project">
+                                <h5>Restaurant Management System</h5>
+                                <p>This is a desktop app built with Tauri.</p>
+                                <a href="">Visit Project</a>
+                                <div class="techs">
+                                    <span>React.JS</span>
+                                    <span>Node.JS</span>
+                                    <span>Express</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon carouselBtn" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon carouselBtn" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    <a href="" id="githubLink"><i class="fa-brands fa-github"></i> Visit my Github</a>
+                </div>
+                <div class="projectCardsParent desktop">
+                    <h2>⭕ My Projects</h2>
+                    <div class="projectCards">
+                        <div class="projectCard">
+                            <img src="https://ishanj.lk/img/RMS/RMS_main.png" alt="First Project">
+                            <h5>Restaurant Management System</h5>
+                            <p>This is a desktop app built with Tauri.</p>
+                            <a href="">Visit Project</a>
+                            <div class="techs">
+                                <span>React.JS</span>
+                                <span>Node.JS</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <img src="https://ishanj.lk/img/sites.png" alt="Second Project">
+                            <h5>Restaurant Management System</h5>
+                            <p>This is a desktop app built with Tauri.</p>
+                            <a href="">Visit Project</a>
+                            <div class="techs">
+                                <span>NextJS</span>
+                                <span>Node.JS</span>
+                                <span>Prisma ORM</span>
+                                <span>Tailwind</span>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <img src="https://ishanj.lk/img/ReactNativeMart.png" alt="Third Project">
+                            <h5>Restaurant Management System</h5>
+                            <p>This is a desktop app built with Tauri.</p>
+                            <a href="">Visit Project</a>
+                            <div class="techs">
+                                <span>React.JS</span>
+                                <span>Node.JS</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                        <div class="projectCard">
+                            <img src="https://ishanj.lk/img/ReactNativeMart.png" alt="Third Project">
+                            <h5>Restaurant Management System</h5>
+                            <p>This is a desktop app built with Tauri.</p>
+                            <a href="">Visit Project</a>
+                            <div class="techs">
+                                <span>React.JS</span>
+                                <span>Node.JS</span>
+                                <span>Express</span>
+                                <span>MongoDB</
+                </div>
             </div>
         </main>
         
