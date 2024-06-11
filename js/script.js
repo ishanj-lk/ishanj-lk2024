@@ -14,8 +14,5 @@ $(document).ready(function(){
         }
     });
 
-    // if ($('#workDiv').is(':visible')) {
-    //     $('.navLinks:nth-child(2)').css('color', '#FFD700')
-        
-    // }
+    
 });

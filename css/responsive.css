@@ -18,17 +18,18 @@
         width: 100%;
     }
     .cv{
-        width: 40%;
+        width: 50%;
+        margin-left: 0;
     }
 }
 
 /* md */
 @media (min-width: 768px) {
     .navBrand img{
-        width: 5%;
+        width: 8%;
     }
-    main{
-        padding-top: 100px;
+    .infoDiv{
+        padding-top: 200px;
     }
     .myInfo{
         width:40%;
@@ -45,6 +46,83 @@
     .cv{
         width: 70%;
         font-size: 1.2rem;
+    }
+    .workCard i{
+        font-size: 2.5rem;
+    }
+    .workCard h5{
+        margin-left: 0;
+        font-size: 1.5rem;
+    }
+    .workCard p{
+        margin-left: 0;
+        font-size: .9rem;
+    }
+    .projectCard{
+        width: 60% !important;
+        margin: 0 auto 50px;
+        gap: 12px;
+    }
+    .projectCard h5{
+        font-size: 1.5rem;
+    }
+    .projectCard p{
+        font-size: 1.2rem;
+    }
+    .projectCard a{
+        font-size: 1rem;
+    }
+    .techs{
+        gap: 4px;
+    }
+    .techs span{
+        font-size: .8rem;
+    }
+    #githubLink{
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
+
+    .newsCards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .newsCard{
+        padding: 20px;
+        gap: 10px;
+    }
+    .newsCard h5{
+        font-size: 1.8rem;
+    }
+    .newsCard p{
+        font-size: 1rem;
+    }
+    .newsCard a{
+        font-size: 1rem;
+    }
+    .contactFormParent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contactSocialIcons{
+        gap: 10px;
+    }
+    .contactSocialIcons h6{
+        margin: 0 auto;
+    }
+    .contactSocialIcons .socialIcons{
+        display: flex;
+        gap: 10px;
+    }
+    .contactSocialIcons .socialIcons .socialIcon i{
+        font-size: 3rem;
+        padding: 30px;
+    }
+    .contactSocialIcons .socialIcons :nth-child(3) i{
+        font-size: 2.4rem;
+    }
+    footer img{
+        width: 15%;
     }
 }
 
@@ -73,10 +151,10 @@
         width: 60%;
         flex-direction: row;
         justify-content: flex-end;
-        margin: 8px 5% 4px 0;
+        margin: 8px 3% 4px 0;
     }
     .navLinks li{
-        margin: 0 6px;
+        margin: 0 4px;
         font-size: 1.2rem;
     }
     .navLinks a{
@@ -84,24 +162,123 @@
         font-size: 1.2rem;
         
     }
-    main{
-        padding-top: 150px;
+    .infoDiv{
+        padding-top: 200px;
     }
     .myInfo img{
         width: 50%;
+    }
+    .socialIcons{
+        width: 60%;
+        padding: 10px;
     }
     .cv{
         width: 40%;
         font-size: 1.2rem;
         margin-left: 0px;
+        padding: 8px;
     }
     .workDiv{
         padding-top: 120px;
+    }
+    .mobile{
+        display: none;
+    }
+    .desktop{
+        display: flex !important;
+    }
+    .projectDiv{
+        padding: 120px 5% 0;
+    }
+    .projectCardsParent{
+        height: 90%;
+    }
+    .projectCardsParent h2{
+        margin-bottom: 20px;
+        padding-bottom: 5px;
+        margin-left: 5%;
+    }
+    .projectCards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 12px;
+    }
+    .projectCard{
+        width: 90% !important;
+        margin: 0 auto 50px;
+        padding: 12px;
+        gap: 2px;
+    }
+    .projectCard h5{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    .projectCard p{
+        font-size: 1rem;
+        margin-left: 0;
+    }
+    .projectCard a{
+        font-size: 1rem;
+    }
+    .techs span{
+        font-size: .8rem;
+    }
+    .newsDiv{
+        padding: 120px 5% 0;
+    }
+    .newsCardsParent h2{
+       margin-bottom: 5%;
+
+    }
+    .contactSocialIcons .socialIcons{
+        width: 60%;
+    }
+    .contactSocialIcons .socialIcons :nth-child(3) i{
+        font-size: 2.3rem;
+    }
+    footer img{
+        width: 10%;
     }
 }
 
 /* xl */
 @media (min-width: 1200px) {
+    .navLinks {
+        margin: 8px 5% 4px 0;
+    }
+    .workCards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    .newsCards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    .newsCard{
+        padding: 30px;
+    }
+    .newsCard h5{
+        font-size: 1.8rem;
+    }
+    .newsCard p{
+        font-size: 1rem;
+    }
+    .newsCard a{
+        font-size: 1rem;
+    }
+    .contactFormParent{
+        margin-top: 20px;
+    }
+    #sendMail{
+        width: 40%;
+    }
+    footer{
+        padding: 100px 0;
+    }
+    footer img{
+        width: 8%;
+    }
+    
 }
 
 @media (min-width: 1440px) {
@@ -189,11 +366,72 @@
     .projectCards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 8px;
+        gap: 21px;
     }
     .projectCard{
         width: 90%;
         margin: 0 auto 50px;
+        gap: 12px;
+    }
+    .projectCard h5{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+    .projectCard p{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+    .projectCard a{
+        font-size: 1.2rem;
+    }
+    .techs span{
+        font-size: .9rem;
+    }
+    .newsDiv{
+        padding: 80px 0 0;
+    }
+    .newsCardsParent h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .newsCard h5{
+        font-size: 2rem;
+    }
+    .newsCard p{
+        font-size: 1.2rem;
+    }
+    .newsCard a{
+        font-size: 1.2rem;
+    }
+    .contactDiv{
+        padding: 80px 0 0;
+    }
+    .contactForm h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-left: 0;
+    }
+    #sendMail{
+        width: 40%;
+    }
+    .contactSocialIcons h6{
+        font-size: 1.5rem;
+        margin: 0 auto 20px;
+    }
+    .contactSocialIcons .socialIcons{
+        width: 40%;
+        margin: 0 auto;
+    }
+    footer{
+        padding: 80px 0;
+    }
+    footer img{
+        width: 6%;
+    }
+    footer p{
+        font-size: 1.2rem;
     }
 }
 

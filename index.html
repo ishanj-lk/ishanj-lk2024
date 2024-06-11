@@ -42,11 +42,11 @@
                     <i id="burger" class="fa-solid fa-bars"></i>
                 </div>
                 <ul class="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#workDiv">My Skills</a></li>
-                    <li><a href="#projectDiv">My Projects</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a id="homeLink" href="#home">Home</a></li>
+                    <li><a id="workLink" href="#workDiv">My Skills</a></li>
+                    <li><a id="projectLink" href="#projectDiv">My Projects</a></li>
+                    <li><a href="#newsDiv">News</a></li>
+                    <li><a href="#contactDiv">Contact</a></li>
                 </ul>  
             </nav>
         </header>
@@ -89,7 +89,7 @@
                         <div class="workCard">
                             <i class="fa-solid fa-mobile"></i>
                             <h5>Mobile App Development</h5>
-                            <p>Back end development with famous libraries and frameworks like Node.JS, Express and php.</p>
+                            <p>Mobile application development with React-Native and Java.</p>
                         </div>
                         <div class="workCard">
                             <i class="fa-solid fa-database"></i>
@@ -106,7 +106,7 @@
             </div>
             <div id="projectDiv" class="projectDiv">
                 <div class="projectCardsParent mobile">
-                    <h2>⭕ My Projects</h2>
+                    <h2>⭕ Latest Projects</h2>
                     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators carouselBtn">
                           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -184,7 +184,7 @@
                     <a href="" id="githubLink"><i class="fa-brands fa-github"></i> Visit my Github</a>
                 </div>
                 <div class="projectCardsParent desktop">
-                    <h2>⭕ My Projects</h2>
+                    <h2>⭕ Latest Projects</h2>
                     <div class="projectCards">
                         <div class="projectCard">
                             <img src="https://ishanj.lk/img/RMS/RMS_main.png" alt="First Project">
@@ -231,10 +231,84 @@
                                 <span>React.JS</span>
                                 <span>Node.JS</span>
                                 <span>Express</span>
-                                <span>MongoDB</
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <div id="newsDiv" class="newsDiv">
+                <div class="newsCardsParent">
+                    <h2>⭕ Latest News</h2>
+                    <div class="newsCards">
+                        <div class="newsCard">
+                            <h5>Attended to a industrial visit.</h5>
+                            <p>I attended to a industrial visit at Virtusa organized by the OUSL.</p>
+                            <div class="newsInfo">
+                                <a href="">Read more</a>
+                                <p class="newDate">31/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="newsCard">
+                            <h5>Attended to a industrial visit.</h5>
+                            <p>I attended to a industrial visit at Virtusa organized by the OUSL.</p>
+                            <div class="newsInfo">
+                                <a href="">Read more</a>
+                                <p class="newDate">31/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="newsCard">
+                            <h5>Attended to a industrial visit.</h5>
+                            <p>I attended to a industrial visit at Virtusa organized by the OUSL.</p>
+                            <div class="newsInfo">
+                                <a href="">Read more</a>
+                                <p class="newDate">31/05/2024</p>
+                            </div>
+                        </div>
+                        <div class="newsCard">
+                            <h5>Attended to a industrial visit.</h5>
+                            <p>I attended to a industrial visit at Virtusa organized by the OUSL.</p>
+                            <div class="newsInfo">
+                                <a href="">Read more</a>
+                                <p class="newDate">31/05/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactDiv" class="contactDiv">
+                <div class="contactFormParent">
+                    <div class="contactForm">
+                        <h2>⭕ Contact Me</h2>
+                        <div class="formGroup">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="name">Title</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="formGroup">
+                            <label for="message">Message</label>
+                            <textarea name="message" id="message" cols="20" rows="10" required></textarea>
+                        </div>
+                        <a id="sendMail" href="" type="submit">Send an Email</a>
+                    </div>
+                    <div class="contactSocialIcons">
+                        <h6>Find me on : </h6>
+                        <div class="socialIcons">
+                            <a href="" class="socialIcon"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="" class="socialIcon"><i class="fa-brands fa-github"></i></a>
+                            <a href="" class="socialIcon"><i class="fa-brands fa-medium"></i></a>
+                            <a href="" class="socialIcon"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <img src="https://ishanj.lk/img/1.png" alt="">
+                <p>Ishan Jayasinghe &copy; 2024</p>
+            </footer>
         </main>
-        
     </body>
 </html>
