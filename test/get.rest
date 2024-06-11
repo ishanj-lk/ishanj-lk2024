@@ -1,0 +1,2 @@
+### Get Projects
+POST https://projectsapi.ishanj.lk/getProjectsPublic
