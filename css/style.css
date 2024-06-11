@@ -11,6 +11,7 @@
     /* font-family: 'Montserrat', sans-serif; */
     /* max-width: 1980px; */
     margin: 0 auto;
+    scroll-behavior: smooth;
 }
 
 nav{
@@ -19,7 +20,7 @@ nav{
     width: 100vw;
     position: fixed;
     z-index: 10;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205); */
     background-color: #fff;
 }
 
@@ -64,6 +65,7 @@ nav{
     color: #fff;
     padding: 0 0 10px;
     border: 0;
+    gap: 10px;
 }
 
 .navLinks a{
@@ -83,7 +85,7 @@ main{
     max-width: 1440px;
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;
+    scrollbar-width: none;
 }
 
 
@@ -157,6 +159,11 @@ main{
     margin-bottom: 5px;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.3s;
+}
+.cv:hover{
+    background-color: #ff014f;
+    color: #fff;
 }
 
 
@@ -189,9 +196,151 @@ main{
 }
 
 .workDiv{
+    display: block;
+    position: relative;
     height: 100vh;
-    padding-top: 100px;
-    padding: 50px 0;
+    padding: 80px 5% 0;
     scroll-snap-align: start;
     scroll-snap-stop:always;
+}
+
+.workDiv > *, .workDiv > * > *, .workDiv > * > * > *, .workDiv > * > * > * > *{
+    overflow-y: hidden !important;
+}
+.workDiv h2{
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+.workCards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+
+}
+
+.workCardsParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+.workCardsParent h2{
+    margin-left: 5%;
+    font-weight: 600;
+}
+.workCard{
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
+    margin: 10px 0;
+    background-color: #f6f6f6;
+    padding: 10px 12px;
+    overflow-y: hidden;
+    display: grid;
+}
+
+.workCard i{
+    margin-left: 0;
+    padding: 5px;
+    color: #ff014f;
+    font-size: 2rem;
+}
+
+.workCard p{
+    font-size: .8rem;
+}
+
+.projectDiv{
+    display: block;
+    position: relative;
+    height: 100vh;
+    padding: 80px 5% 0;
+    scroll-snap-align: start;
+    scroll-snap-stop:always;
+}
+.projectDiv > *, .projectDiv > * > *, .projectDiv > * > * > *, .projectDiv > * > * > * > *, .projectDiv > * > * > * > * > *, .projectDiv > * > * > * > * > * > *{
+    overflow-y: hidden !important;
+}
+.projectDiv h2{
+    font-weight: 600;
+    margin-bottom: 10%;
+    margin-left: 5%;
+    /* text-decoration: underline; */
+}
+
+.projectCardsParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+}
+
+.projectCard{
+    display: grid;
+    width: 70%;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
+    margin: 10px 0;
+    background-color: #f6f6f6;
+    padding: 10px 12px;
+    overflow-y: hidden;
+    gap: 5px;
+    margin: 0 15% 80px;
+}
+
+.projectCard img{
+    width: 100%;
+    aspect-ratio: 16/14;
+    border-radius: 4px;
+}
+.projectCard h5{
+    font-size: 1.2rem;
+    margin-left: 0;
+}
+.projectCard p{
+    margin: 0;
+    font-size: 1rem;
+}
+.projectCard a{
+    color: #4fa3db;
+    text-decoration: none;
+    font-size: .9rem;
+    margin-bottom: 5px;
+
+}
+.techs{
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 2px;
+}
+.techs span{
+    background-color: #e7dcdf;
+    color: #000;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: .7rem;
+    font-weight: 700;
+}
+
+.carouselBtn {
+    color: black;
+    background-color: black;
+    padding: 5px !important;
+    border-radius: 3px;
+    opacity: 0.9 !important;
+}
+#githubLink{
+    display: inline;
+    position: relative;
+    font-weight: 600;
+    margin: 20px auto 5%;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
 }

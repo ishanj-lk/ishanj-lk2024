@@ -106,7 +106,7 @@
 
 @media (min-width: 1440px) {
     .navBrand img{
-        width: 10%;
+        width: 8%;
         margin-left: 15%;
     }
     .navLinks a{
@@ -141,6 +141,59 @@
     .cv{
         width: 40%;
         font-size: 1.5rem;
+    }
+
+    .workDiv{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .workCards{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    .workCard{
+        padding: 20px;
+    }
+    .workCardsParent h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-left: 0;
+    }
+    .workCard i{
+        font-size: 2.5rem;
+    }
+    .workCard h5{
+        font-size: 1.8rem;
+        margin-left: 0;
+    }
+    .workCard p{
+        font-size: 1.2rem;
+        margin-left: 0;
+    }
+
+    .mobile{
+        display: none;
+    }
+    .projectDiv{
+        padding: 80px 0 0;
+    }
+    .projectCardsParent{
+        height: 90%;
+    }
+    .projectCardsParent h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 50px;
+        margin-left: 0;
+    }
+    .projectCards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+    .projectCard{
+        width: 90%;
+        margin: 0 auto 50px;
     }
 }
 
