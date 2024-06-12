@@ -71,6 +71,7 @@ nav{
     color: black;
     text-decoration: none;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 .navLinks :nth-child(1) a{
@@ -80,11 +81,15 @@ nav{
 main{
     height: 100vh;
     z-index: 0;
-    max-width: 1440px;
     scroll-snap-type: y mandatory;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;
+    /* -ms-overflow-style: none;  IE and Edge */
+    /* scrollbar-width: none; */
     scroll-behavior: smooth !important;
+}
+
+.infoDiv, .workDiv, .projectDiv, .newsDiv, .contactDiv{
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 
@@ -451,6 +456,13 @@ main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
+}
+.formGroupTextInputs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
     gap: 10px;
 }
 .contactForm .formGroup{
