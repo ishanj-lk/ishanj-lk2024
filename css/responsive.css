@@ -143,7 +143,7 @@
         display: none;
     }
     .navBrand h1{
-        margin-left: 5%;
+        margin-left: 15%;
         margin-top: 9px;
     }
     .navLinks{
@@ -276,11 +276,23 @@
     .contactForm{
         width: 60%;
     }
+    .formGroupTextInputs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
+    }
+    .formGroupTextInputs .formGroup{
+        width: 49%;
+        margin-left: 0;
+    }
     .contactSocialIcons{
         width: 40%;
     }
     #sendMail{
         width: 40%;
+        margin-top: 30px;
     }
     footer{
         padding: 100px 0;
