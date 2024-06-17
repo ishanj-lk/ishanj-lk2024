@@ -3,6 +3,9 @@
 
 /* font-family: 'Montserrat', sans-serif;  */
 
+html{
+    scroll-behavior: smooth !important;
+}
 *{
     padding: 0;
     box-sizing: border-box;
@@ -27,6 +30,7 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     padding: 10px 0;
+    width: 100%;
 }
 
 .navBrand img{
@@ -37,12 +41,13 @@ nav{
 }
 
 .navBrand h1{
-    margin-left: 5%;
+    margin-left: 10%;
     font-weight: 500;
     flex-grow: 1;
     overflow-y: hidden;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+    /* text-align: center; */
 }
 
 .navBrand i{
@@ -321,7 +326,7 @@ main{
 .techs{
     display: flex;
     flex-wrap: wrap;
-    gap: 2px;
+    gap: 5px;
 }
 .techs span{
     background-color: #e7dcdf;
@@ -330,6 +335,7 @@ main{
     border-radius: 5px;
     font-size: .7rem;
     font-weight: 700;
+    max-height: 30px;
 }
 
 .carouselBtn {
@@ -484,8 +490,9 @@ main{
     flex-grow: 1;
     font-size: 1rem;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 6px;
     max-width: 420px;
+    border: 1px solid #b6afaf;
 }
 .contactForm .formGroup textarea{
     display: flex;
@@ -493,8 +500,8 @@ main{
     height: 200px;
     font-size: 1rem;
     padding: 5px;
-    border-radius: 10px;
-    border: 2px solid #000;
+    border-radius: 6px;
+    border: 1px solid #b6afaf;
 }
 
 #sendMail{
@@ -561,5 +568,7 @@ footer{
 footer img{
     width: 20%;
     border-radius: 50%;
-    border: 2px solid #fff;
+    /* border: 3px solid #b6afaf; */
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.137), 0 6px 20px 0 rgba(0, 0, 0, 0.205);
 }

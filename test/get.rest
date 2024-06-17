@@ -1,2 +1,2 @@
 ### Get Projects
-POST https://projectsapi.ishanj.lk/getProjectsPublic
+GET https://dashboardapi.ishanj.lk/api/projects

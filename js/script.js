@@ -47,7 +47,7 @@ $(document).ready(function(){
     const desktopContainer = $('.projectCards');
     const mobileContainer = $('.carousel-inner');
     
-    const request = fetch('https://projectsapi.ishanj.lk/getProjectsPublic', {method: 'POST'});
+    const request = fetch('https://dashboardapi.ishanj.lk/api/projects');
     request.then((response) => {
         return response.json();
     }).then((data) => {
@@ -58,13 +58,13 @@ $(document).ready(function(){
         desktopContainer.empty();
         mobileContainer.empty();
         for (let i = 0; i < 4; i++) {
-            let techs = data[i].technologies.split(';');
+            let techs = data[i].techs.split(';');
             desktopContainer.append(`
             <div class="projectCard">
-                <img src="${data[i].imageUrl}" alt="Project Image">
+                <img src="${data[i].img}" alt="Project Image">
                 <h5>${data[i].title}</h5>
                 <p>${data[i].description}</p>
-                <a href="${data[i].pageUrl}">Visit Project</a>
+                <a href="${data[i].page}" target="_blank">View Project</a>
                 <div class="techs">
                     <span>${techs[0]}</span>
                     <span>${techs[1]}</span>
@@ -77,10 +77,10 @@ $(document).ready(function(){
             let active = i == 0 ? 'active' : '';
             mobileContainer.append(`
             <div class="carousel-item ${active}"><div class="projectCard">
-                <img src="${data[i].imageUrl}" alt="Project Image">
+                <img src="${data[i].img}" alt="Project Image">
                 <h5>${data[i].title}</h5>
                 <p>${data[i].description}</p>
-                <a href="${data[i].pageUrl}">Visit Project</a>
+                <a href="${data[i].page}" target="_blank">View Project</a>
                 <div class="techs">
                     <span>${techs[0]}</span>
                     <span>${techs[1]}</span>
@@ -95,5 +95,44 @@ $(document).ready(function(){
     }).catch((err) => {
         console.log(err);
     });
+
+    const newsContainer = $('.newsCards');
+    const request2 = fetch('https://dashboardapi.ishanj.lk/api/news');
+    request2.then((response) => {
+        return response.json();
+    }).then((data) => {
+        if (!data) {
+            return
+        }
+        console.log(data);
+        newsContainer.empty();
+        for (let i = 0; i < 4; i++) {
+            newsContainer.append(`
+            <div class="newsCard">
+                <h5>${data[i].title}</h5>
+                <p>${data[i].description}</p>
+                <div class="newsInfo">
+                    <a href="${data[i].page}" target="_blank">Read more</a>
+                    <p class="newDate">${data[i].date}</p>
+                </div>
+            </div>
+            `);
+        }
+    }).catch((err) => {
+        console.log(err);
+    });
+
+    $('#sendMail').click(()=> {
+        const name = $('#name').val();
+        const subject = $('#subject').val();
+        const message = $('#message').val();
+        const data = {
+            name,
+            subject,
+            message
+        }
+        $('#sendMail').attr('href', `mailto:ishanrashithajayasinghe@gmail.com?subject=${subject}&body=${message}%0A%0ABest Regards,%0A${name}.`);
+    });
+    
     
 });
