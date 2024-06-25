@@ -113,10 +113,11 @@
     .contactSocialIcons .socialIcons{
         display: flex;
         gap: 10px;
+        width: 70%;
     }
     .contactSocialIcons .socialIcons .socialIcon i{
         font-size: 3rem;
-        padding: 30px;
+        padding: 20px;
     }
     .contactSocialIcons .socialIcons :nth-child(3) i{
         font-size: 2.4rem;
@@ -262,6 +263,11 @@
     }
     .newsCard p{
         font-size: 1rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* number of lines to show */
+                line-clamp: 5; 
+        -webkit-box-orient: vertical;
     }
     .newsCard a{
         font-size: 1rem;
@@ -310,36 +316,36 @@
     }
     .navLinks a{
         margin: 0 15px;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     main{
         padding-top: 240px;
     }
     .myInfo img{
-        width: 60%;
+        width: 50%;
     }
     .myInfoContent h5{
         font-weight: 300;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
     .myInfoContent h1{
-        font-size: 3.3rem;
+        font-size: 2.4rem;
     }
     .myInfoContent h3{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .myInfoContent p{
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .myInfoContent h6{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .socialIcons{
-        margin: 30px 0;
+        margin: 20px 0;
     }
     .cv{
         width: 40%;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
 
     .workDiv{
@@ -348,25 +354,25 @@
     }
     .workCards{
         grid-template-columns: repeat(4, 1fr);
-        gap: 40px;
+        gap: 30px;
     }
     .workCard{
         padding: 20px;
     }
     .workCardsParent h2{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 600;
         margin-left: 0;
     }
     .workCard i{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
     }
     .workCard h5{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-left: 0;
     }
     .workCard p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-left: 0;
     }
 
@@ -380,7 +386,7 @@
         height: 90%;
     }
     .projectCardsParent h2{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 600;
         margin-bottom: 50px;
         margin-left: 0;
@@ -388,23 +394,23 @@
     .projectCards{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 21px;
+        gap: 18px;
     }
     .projectCard{
-        width: 90%;
+        width: 80% !important;
         margin: 0 auto 50px;
         gap: 12px;
     }
     .projectCard h5{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         margin-left: 0;
     }
     .projectCard p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-left: 0;
     }
     .projectCard a{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .techs span{
         font-size: .9rem;
@@ -413,31 +419,31 @@
         padding: 80px 0 0;
     }
     .newsCardsParent h2{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 600;
         margin-bottom: 50px;
         margin-left: 0;
     }
     .newsCard h5{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .newsCard p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .newsCard a{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .contactDiv{
         padding: 80px 0 0;
     }
     .contactForm{
-        width: 60%;
+        width: 40%;
     }
     .contactSocialIcons{
         width: 40%;
     }
     .contactForm h2{
-        font-size: 2.5rem;
+        font-size: 2.1rem;
         font-weight: 600;
         margin-left: 0;
     }
@@ -450,8 +456,11 @@
         margin: 0 auto 20px;
     }
     .contactSocialIcons .socialIcons{
-        width: 60%;
+        width: 100%;
         margin: 0 auto;
+    }
+    .contactSocialIcons .socialIcons .socialIcon a{
+        font-size: 1.5rem;
     }
     footer{
         padding: 60px 0;

@@ -315,6 +315,11 @@ main{
 .projectCard p{
     margin: 0;
     font-size: 1rem;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
 }
 .projectCard a{
     color: #4fa3db;

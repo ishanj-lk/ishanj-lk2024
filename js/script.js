@@ -20,26 +20,23 @@ $(document).ready(function(){
         let top = $(this).scrollTop();
         let height = $(this).height();
         let width = $(this).width();
+        console.log(top);
 
         $('.navLink').css('color', '#000');
 
-        if (top<height-300 ){
+        if (top<600 ){
             $('#homeLink').css('color', '#ff014f');
         }
-        if(top/height > 0.7 && top/height < 1.6){
+        if(top > 600 && top <1500){
             $('#workLink').css('color', '#ff014f');
         }
-        if(top/height > 1.6 && top/height < 2.8){
+        if(top > 1500 && top < 2400){
             $('#projectLink').css('color', '#ff014f');
         }
-        let mark = 3.8
-        if (width>height) {
-            mark = 4
-        }
-        if(top/height > 2.6 && top/height < mark){
+        if(top > 2400 && top < 3300){
             $('#newsLink').css('color', '#ff014f');
         }
-        if(top/height > mark){
+        if(top > 3300){
             $('#contactLink').css('color', '#ff014f');
         }
     });
